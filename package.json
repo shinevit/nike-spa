@@ -1,0 +1,42 @@
+{
+  "name": "nike",
+  "description": "This is a Nike web site for learning Tailwind CSS with Vite & React",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "author": "Vitalii Radchenko",
+  "license": "ISC",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "tailwind",
+    "css",
+    "vite",
+    "react"
+  ],
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@tailwindcss/postcss": "^4.0.1",
+    "@tailwindcss/vite": "^4.0.1",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.14.0",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.1",
+    "vite": "^6.0.5"
+  }
+}
