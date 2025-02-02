@@ -12,7 +12,7 @@ layer(base);
 @layer utilities {
   
   .max-container {
-    max-width: 1440px;
+    max-width: var(--screen-wide);
     margin: 0 auto;
   }
 
