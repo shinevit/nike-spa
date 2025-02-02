@@ -4,6 +4,7 @@
 
 @import "./theme.css" layer(theme);
 
+
 @layer utilities {
   
   .max-container {
@@ -27,20 +28,24 @@
     @apply sm:py-24 py-12;
   }
 
-  .padding-l {
-    @apply sm:pl-16 pl-8;
-  }
-
-  .padding-r {
-    @apply sm:pr-16 pr-8;
-  }
-
   .padding-t {
     @apply sm:pt-24 pt-12;
   }
 
   .padding-b {
     @apply sm:pb-24 pb-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+  
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .section-margin-l {
+    @apply max-sm:ml-8 max-xl:ml-16 xl:ml-0;
   }
 
   .info-text {
