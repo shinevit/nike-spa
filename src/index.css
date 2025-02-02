@@ -2,17 +2,12 @@
 /* @config '../tailwind.config.js'; */
 @layer theme, base, components, utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap')
-layer(base);
-@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap')
-layer(base);
-
 @import "./theme.css" layer(theme);
 
 @layer utilities {
   
   .max-container {
-    max-width: var(--screen-wide);
+    max-width: var(--breakpoint-wide);
     margin: 0 auto;
   }
 
