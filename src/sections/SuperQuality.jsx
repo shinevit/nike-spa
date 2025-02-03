@@ -27,7 +27,7 @@ const SuperQuality = () => {
         </div>
       </div>
       <div className="flex flex-1 flex-wrap sm:ml-[-30px] 
-      lg:mr-[25px] max-lg:justify-center wide:justify-end items-center">
+      lg:mr-[32px] max-lg:justify-center wide:justify-end items-center">
         <img 
           src={shoe8}
           alt="shoe super quality"
