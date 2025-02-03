@@ -1,8 +1,13 @@
-const CTAButton = ({ label, iconURL}) => {
+const CTAButton = ({ label, iconURL, extraClasses}) => {
+  const classesStr = `${Object.values({...extraClasses})}`.replaceAll(',', ' ');
+
   return (
-    <button className="flex justify-center items-center
-      gap-2 px-7 py-4 border font-montserrat text-lg leading-none
-      bg-coral-red border-coral-red rounded-full text-white ">
+    <button className={`flex justify-center items-center
+      gap-2 px-7 py-4 border font-montserrat text-lg leading-none rounded-full
+      ${extraClasses 
+        ? classesStr
+        : 'bg-coral-red border-coral-red text-white'}
+    `}>
       {label}
 
       {iconURL && 

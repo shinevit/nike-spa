@@ -27,7 +27,7 @@ const App = () => (
       <Services /> {/* Done */}
     </section>
     <section className="padding">
-      <SpecialOffer />
+      <SpecialOffer /> {/* Done */}
     </section>
     <section className="bg-pale-blue padding">
       <CustomerReviews />
