@@ -13,15 +13,15 @@ import Nav from './components/Nav';
 
 const App = () => (
   <main className="relative">
-    <Nav />
+    <Nav /> {/* Done */}
     <section className="padding-b">
-      <Hero />
+      <Hero /> {/* Done */}
     </section>
     <section className="padding">
-      <PopularProducts />
+      <PopularProducts /> {/* Done */}
     </section>
     <section className="padding">
-      <SuperQuality />
+      <SuperQuality /> {/* Done */}
     </section>
     <section className="padding-x py-10">
       <Services />
