@@ -52,6 +52,10 @@
     @apply font-montserrat text-slate-gray text-lg leading-7;
   }
 
+  .heading-text {
+    @apply font-palanquin capitalize text-4xl font-bold;
+  }
+
   .bg-hero {
     background-image: var(--bg-hero);
     @apply bg-center bg-cover;
