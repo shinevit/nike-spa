@@ -13,27 +13,27 @@ import Nav from './components/Nav';
 
 const App = () => (
   <main className="relative">
-    <Nav /> {/* Done */}
+    <Nav />
     <section className="padding-b">
-      <Hero /> {/* Done */}
+      <Hero />
     </section>
     <section className="padding">
-      <PopularProducts /> {/* Done */}
+      <PopularProducts />
     </section>
     <section className="padding">
-      <SuperQuality /> {/* Done */}
+      <SuperQuality />
     </section>
     <section className="padding-x py-10">
-      <Services /> {/* Done */}
+      <Services />
     </section>
     <section className="padding">
-      <SpecialOffer /> {/* Done */}
+      <SpecialOffer />
     </section>
     <section className="bg-pale-blue padding">
-      <CustomerReviews /> {/* Done */}
+      <CustomerReviews />
     </section>
     <section className="padding-x sm:py-32 py-16 w-full">
-      <Subscribe /> {/* Done */}
+      <Subscribe />
     </section>
     <section className="bg-black padding-x padding-y pb-8">
       <Footer />
