@@ -33,7 +33,7 @@ const App = () => (
       <CustomerReviews /> {/* Done */}
     </section>
     <section className="padding-x sm:py-32 py-16 w-full">
-      <Subscribe />
+      <Subscribe /> {/* Done */}
     </section>
     <section className="bg-black padding-x padding-y pb-8">
       <Footer />
