@@ -4,56 +4,48 @@
 
 @import "./theme.css" layer(theme);
 
+/* True utility classes */
+@utility padding {
+  @apply sm:px-16 px-8 sm:py-24 py-12;
+}
 
+@utility padding-x {
+  @apply sm:px-16 px-8;
+}
+
+@utility padding-y {
+  @apply sm:py-24 py-12;
+}
+
+@utility padding-t {
+  @apply sm:pt-24 pt-12;
+}
+
+@utility padding-b {
+  @apply sm:pb-24 pb-12;
+}
+
+@utility padding-l {
+  @apply sm:pl-16 pl-8;
+}
+
+@utility padding-r {
+  @apply sm:pr-16 pr-8;
+}
+
+/* This layer organizes classes only within the layer. It does not generate utility classes */
 @layer utilities {
-  
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
   .max-container {
     max-width: var(--breakpoint-wide);
     margin: 0 auto;
-  }
-
-  .input {
-    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-hidden sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
-  }
-  
-  .padding {
-    @apply sm:px-16 px-8 sm:py-24 py-12;
-  }
-
-  .padding-x {
-    @apply sm:px-16 px-8;
-  }
-
-  .padding-y {
-    @apply sm:py-24 py-12;
-  }
-
-  .padding-t {
-    @apply sm:pt-24 pt-12;
-  }
-
-  .padding-b {
-    @apply sm:pb-24 pb-12;
-  }
-
-  .padding-l {
-    @apply sm:pl-16 pl-8;
-  }
-  
-  .padding-r {
-    @apply sm:pr-16 pr-8;
-  }
-
-  .section-margin-l {
-    @apply max-sm:ml-8 max-xl:ml-16 xl:ml-0;
-  }
-
-  .info-text {
-    @apply font-montserrat text-slate-gray text-lg leading-7;
-  }
-
-  .heading-text {
-    @apply font-palanquin capitalize text-4xl font-bold;
   }
 
   .bg-hero {
@@ -66,10 +58,15 @@
     @apply bg-center bg-cover;
   }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  .info-text {
+    @apply font-montserrat text-slate-gray text-lg leading-7;
+  }
+
+  .heading-text {
+    @apply font-palanquin capitalize text-4xl font-bold;
+  }
+
+  .input {
+    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-hidden sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
   }
 }
