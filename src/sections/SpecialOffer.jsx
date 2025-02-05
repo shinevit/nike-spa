@@ -14,7 +14,7 @@ const SpecialOffer = () => {
           className="object-contain w-full"
         />
       </div>
-      <div className="flex flex-1 flex-col lg:max-w-[573px] min-w-[450px] xl:pt-28">
+      <div className="flex flex-1 flex-col lg:max-w-[573px] min-w-[450px] xl:pt-28 text-justify">
         <h2 className="heading-text lg:max-w-lg">
           Special{' '}<span className="text-coral-red">offer</span>
         </h2>
