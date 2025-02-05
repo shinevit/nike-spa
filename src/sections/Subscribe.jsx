@@ -14,8 +14,10 @@ const Subscribe = () => {
         <div className="flex lg:max-w-[40%] w-full items-center
         max-sm:flex-col gap-5 p-2.5 sm:border sm:border-slate-gray
         rounded-full min-w-[380px]">
-          <input 
-            type="text"
+          <input
+            id="email"
+            name="email"
+            type="email"
             placeholder="subscribe@nike.com"
             className="input"
           />
