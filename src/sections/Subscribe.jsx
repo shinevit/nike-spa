@@ -8,7 +8,7 @@ const Subscribe = () => {
       items-center max-lg:flex-col gap-10">
         <div className="heading-text ">
           <h3 className="leading-[68px] lg:max-w-md">Sign up for {' '}
-            <span className="text-coral-red">updates</span>{' '}& newslatter
+            <span className="text-coral-red">updates</span>{' '}& newsletter
           </h3>
         </div>
         <div className="flex lg:max-w-[40%] w-full items-center
@@ -16,18 +16,18 @@ const Subscribe = () => {
         rounded-full min-w-[380px]">
           <input 
             type="text"
-            placeholder="subscribe@nike@com"
+            placeholder="subscribe@nike.com"
             className="input"
           />
           <div className="flex max-sm:justify-end items-center
           max-sm:w-full max-md:hidden">
             <Button label="Sign Up" fullWidth />
           </div>
-        </div>
-        <div className="flex max-sm:justify-end items-center
+          <div className="flex max-sm:justify-end items-center
           w-full hidden max-md:block">
             <Button label="Sign Up" fullWidth />
           </div>
+        </div>
     </section>
   );
 };
