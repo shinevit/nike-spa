@@ -1,0 +1,15 @@
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: web-server
+    volumes:
+      - nginx:/etc/nginx
+      - ./dist:/usr/share/nginx/html
+    ports:
+      - ${PORT:-5173}:80
+    environment:
+      - NGINX_PORT=80
+      
+volumes:
+  nginx:
+    name: nginx

@@ -10,11 +10,26 @@ Currently, two official plugins are available:
 
 ## Start the app
 
-> npm run dev
+> `npm start`
 
 ## Build the app
 
-> npm run build
+> `npm run build`
 
 _Find the `dist` folder after the build.    
-To get the buld version of the app worked put a content of `dist` folder on a web server or deploy to a remote host_
+To get the buld version of the app worked place a content of `dist` folder on a local web server or deploy to a remote host_
+
+## Deploy the app under a docker locally
+
+> `npm run deploy`
+
+_It publishes `dist` folder to a local docker container. Nginx server is created with persistent `nginx` volume_
+
+## Open the App with tone of these link on a web browser:
+
+`http://localhost:5173`   
+`http://[internal IP]:5173`
+
+### Destroy a local server deployment
+
+> `npm run destroy`
