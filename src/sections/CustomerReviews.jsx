@@ -3,7 +3,7 @@ import { ReviewCard } from '../components';
 
 const CustomerReviews = () => {
   return (
-    <section className="max-container ">
+    <div className="max-container ">
       <h3 className="heading-text text-center">
         What our{' '}
         <span className="text-coral-red">customers</span>{' '}say?
@@ -18,7 +18,7 @@ const CustomerReviews = () => {
           <ReviewCard key={review.customerName} {...review} />
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

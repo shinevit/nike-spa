@@ -1,10 +1,10 @@
 import { shoe8 } from "../assets/images";
-import Button from "../components/CTAButton";
+import { PrimaryButton } from "../components";
 
 const SuperQuality = () => {
   return (
-    <section
-      id="about-us"
+    <div
+      id="services"
       className="flex justify-between items-start
       max-lg:flex-col gap-10 w-full max-container"
     >
@@ -20,10 +20,10 @@ const SuperQuality = () => {
           quality, innovation, and a touch of elegance.
         </p>
         <p className="mt-6 lg:max-w-lg info-text text-justify">
-          Our dedication to detail and excellence ensures your satisfaction
+          Our dedication to detail and excellence ensures your satisfaction.
         </p>
         <div className="mt-11">
-          <Button label="View details" />
+          <PrimaryButton label="View details" />
         </div>
       </div>
       <div className="flex flex-1 flex-wrap max-sm:mx-[-20px]
@@ -36,7 +36,7 @@ const SuperQuality = () => {
           className="object-contain"
         />
       </div>
-    </section>
+    </div>
   );
 };
 

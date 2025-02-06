@@ -8,7 +8,7 @@ import {
   Subscribe,
   Footer
 } from './sections';
-import Nav from './components/Nav';
+import { Nav } from './components';
 
 
 const App = () => (
@@ -35,9 +35,9 @@ const App = () => (
     <section className="padding-x sm:py-32 py-16 w-full">
       <Subscribe />
     </section>
-    <section className="bg-black padding-x padding-y pb-8">
+    <div className="bg-black padding-x padding-y pb-8">
       <Footer />
-    </section>
+    </div>
   </main>
 );
 

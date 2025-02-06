@@ -1,8 +1,8 @@
-import Button from '../components/CTAButton';
+import { PrimaryButton } from "../components";
 
 const Subscribe = () => {
   return (
-    <section 
+    <div 
       id="contact-us"
       className="max-container flex justify-between
       items-center max-lg:flex-col gap-10">
@@ -22,10 +22,10 @@ const Subscribe = () => {
             className="input max-sm:py-3 w-full"
           />
           <div className="flex max-sm:justify-end max-sm:w-full items-center">
-            <Button label="Sign Up" fullWidth />
+            <PrimaryButton label="Sign Up" fullWidth />
           </div>
         </div>
-    </section>
+    </div>
   );
 };
 

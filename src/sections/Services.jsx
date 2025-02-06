@@ -3,7 +3,7 @@ import { ServiceCard } from "../components";
 
 const Services = () => {
   return (
-    <section className="max-container flex 
+    <div className="max-container flex 
     justify-center flex-wrap gap-10 max-sm:gap-8">
       {services.map((service) => (
         <ServiceCard
@@ -11,7 +11,7 @@ const Services = () => {
           {...service}
         />
       ))}
-    </section>
+    </div>
   );
 };
 

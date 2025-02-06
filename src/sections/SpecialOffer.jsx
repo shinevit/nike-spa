@@ -1,10 +1,10 @@
 import { arrowRight } from "../assets/icons";
 import { offer } from "../assets/images";
-import Button from "../components/CTAButton";
+import { PrimaryButton, OutlineButton } from "../components";
 
 const SpecialOffer = () => {
   return (
-    <section className="flex justify-between items-start 
+    <div className="flex justify-between items-start 
      max-xl:flex-col-reverse gap-10 max-container">
       <div className="flex-1">
         <img 
@@ -29,18 +29,11 @@ const SpecialOffer = () => {
           nothing short of exceptional.
         </p>
         <div className="mt-11 flex flex-row gap-4">
-          <Button label="Shop now" iconURL={arrowRight} />
-          <Button
-            label="Learn more"
-            extraClasses={{
-              backgroundColor: "bg-white",
-              borderColor: "border-slate-gray",
-              textColor: "text-slate-gray"
-            }}
-          />
+          <PrimaryButton label="Shop now" iconURL={arrowRight} />
+          <OutlineButton label="Learn more" />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
