@@ -6,27 +6,22 @@ const Subscribe = () => {
       id="contact-us"
       className="max-container flex justify-between
       items-center max-lg:flex-col gap-10">
-        <div className="heading-text ">
+        <div className="heading-text">
           <h3 className="leading-[68px] lg:max-w-md">Sign up for {' '}
             <span className="text-coral-red">updates</span>{' '}& newsletter
           </h3>
         </div>
         <div className="flex lg:max-w-[40%] w-full items-center
         max-sm:flex-col gap-5 p-2.5 sm:border sm:border-slate-gray
-        rounded-full min-w-[380px]">
+        rounded-full max-sm:px-0">
           <input
             id="email"
             name="email"
             type="email"
             placeholder="subscribe@nike.com"
-            className="input"
+            className="input max-sm:py-3 w-full"
           />
-          <div className="flex max-sm:justify-end items-center
-          max-sm:w-full max-md:hidden">
-            <Button label="Sign Up" fullWidth />
-          </div>
-          <div className="flex max-sm:justify-end items-center
-          w-full hidden max-md:block">
+          <div className="flex max-sm:justify-end max-sm:w-full items-center">
             <Button label="Sign Up" fullWidth />
           </div>
         </div>

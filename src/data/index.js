@@ -4,7 +4,7 @@ import {
     shieldTick,
     support,
     truckFast,
-    twitter
+    xTwitter
 } from "../assets/icons";
 import {
     bigShoe1,
@@ -25,8 +25,8 @@ import {
 
 export const navLinks = [
     { href: "#home", label: "Home" },
-    { href: "#about-us", label: "About Us" },
     { href: "#products", label: "Products" },
+    { href: "#about-us", label: "About Us" },
     { href: "#contact-us", label: "Contact Us" },
 ];
 
@@ -53,14 +53,9 @@ export const statistics = [
 
 export const products = [
     {
-        imgURL: shoe4,
-        name: "Nike Air Jordan-01",
-        price: "$200.20",
-    },
-    {
-        imgURL: shoe5,
-        name: "Nike Air Jordan-10",
-        price: "$210.20",
+        imgURL: shoe7,
+        name: "Nike Air Jordan-001",
+        price: "$230.20",
     },
     {
         imgURL: shoe6,
@@ -68,10 +63,15 @@ export const products = [
         price: "$220.20",
     },
     {
-        imgURL: shoe7,
-        name: "Nike Air Jordan-001",
-        price: "$230.20",
+        imgURL: shoe5,
+        name: "Nike Air Jordan-10",
+        price: "$210.20",
     },
+    {
+        imgURL: shoe4,
+        name: "Nike Air Jordan-01",
+        price: "$200.20",
+    }
 ];
 
 export const services = [
@@ -140,6 +140,6 @@ export const footerLinks = [
 
 export const socialMedia = [
     { src: facebook, alt: "facebook logo" },
-    { src: twitter, alt: "twitter logo" },
+    { src: xTwitter, alt: "X logo" },
     { src: instagram, alt: "instagram logo" },
 ];

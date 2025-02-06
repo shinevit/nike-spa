@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="max-container">
       <div className="flex justify-between items-start gap-20 
-      flex-wrap max-lg:flex-col text-white">
+      flex-wrap max-lg:flex-col">
         <div className="flex flex-col items-start">
           <a href="/">
             <img
@@ -60,7 +60,7 @@ const Footer = () => {
       </div>
 
       <div className="flex justify-between text-white-400
-      mt-24 max-sm:flex-col max-sm:items-center max-sm:mb-[-35px] sm:mb-[-50px]">
+      mt-24 max-sm:flex-col max-sm:items-center max-sm:mb-[10px] sm:mb-[20px]">
           <div className="flex flex-1 justify-start items-center
           gap-2 font-montserrat cursor-pointer">
             <img

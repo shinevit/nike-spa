@@ -26,21 +26,15 @@ const App = () => (
     <section className="padding-x py-10">
       <Services />
     </section>
-
-    {/* TODO: fix a fixed width of this section */}
     <section className="padding">
       <SpecialOffer />
     </section> 
-    
     <section className="bg-pale-blue padding">
       <CustomerReviews />
     </section>
-
-    {/* TODO: fix a fixed width of this section */}
     <section className="padding-x sm:py-32 py-16 w-full">
       <Subscribe />
     </section>
-
     <section className="bg-black padding-x padding-y pb-8">
       <Footer />
     </section>
