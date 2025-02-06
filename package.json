@@ -7,7 +7,7 @@
   "author": "Vitalii Radchenko",
   "license": "ISC",
   "scripts": {
-    "start": "vite",
+    "start": "vite --host",
     "build": "vite build",
     "deploy": "docker-compose up -d && echo Open a web browser with the link: http://localhost:5173",
     "destroy": "docker-compose down",

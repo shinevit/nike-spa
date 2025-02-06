@@ -5,6 +5,9 @@ import { ViteMinifyPlugin } from 'vite-plugin-minify'
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: {
+    open: './index.html',
+  },
   plugins: [
     react(),
     tailwindcss(),
