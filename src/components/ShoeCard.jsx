@@ -10,7 +10,7 @@ function ShoeCard({imgURL, onChangeBigShoeImage, bigShoeImage}) {
       border-2 
       rounded-xl
       ${bigShoeImage === imgURL.bigShoe 
-        ? 'border-coral-red'
+        ? 'border-accent'
         : 'border-transparent'
       } cursor-pointer max-sm:flex-1
     `}

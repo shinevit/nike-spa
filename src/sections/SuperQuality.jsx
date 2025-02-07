@@ -11,7 +11,7 @@ const SuperQuality = () => {
       <div className="flex flex-1 flex-col">
         <h2 className="heading-text lg:max-w-lg">
           We provide you{' '}
-          <span className="text-coral-red">super quality</span>{' '}
+          <span className="text-accent">super quality</span>{' '}
           shoes
         </h2>
         <p className="mt-4 lg:max-w-lg info-text text-justify">

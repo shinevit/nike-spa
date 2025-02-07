@@ -2,6 +2,8 @@ import React from 'react';
 import { headerLogo } from '../assets/images';
 import { hamburger } from '../assets/icons';
 import { navLinks } from '../data';
+import ThemeSwitcher from './ThemeSwitcher';
+
 
 const Nav = () => {
   return (
@@ -19,7 +21,9 @@ const Nav = () => {
             {navLinks.map((link) => (
                 <li key={link.label}>
                     <a 
-                        className="font-montserrat leading-normal text-lg text-slate-gray"
+                        className={`font-montserrat leading-normal text-lg text-slate-gray 
+                          ${['services', 'contact us'].includes(link.label.toLowerCase()) && "dark:xl:text-gray-800"}`
+                        }
                         href={link.href}
                     >
                         {link.label}
@@ -27,7 +31,10 @@ const Nav = () => {
                 </li>
             ))}
         </ul>
-        <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24">
+        <div className="max-lg:hidden">
+          <ThemeSwitcher />
+        </div>
+        <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24 text-black dark:text-white dark:xl:text-gray-800">
             <a href="/">Sign in</a>
             <span>/</span>
             <a href="/">Explore now</a>

@@ -10,7 +10,7 @@ const BaseButton = ({
     {children || label}
 
     {iconURL && 
-        <img src={iconURL} alt="icon" className="icon-small" />
+        <img src={iconURL} alt="icon" className="ml-2 icon-small" />
     }
   </button>
 );
@@ -24,10 +24,10 @@ const PrimaryButton = ({ label, iconURL, fullWidth, onClick}) => (
       onClick={onClick} />
 );
 
-const OutlineButton = ({ label, fullWidth, onClick}) => (
+const OutlineButton = ({ label, fullWidth, onClick, className}) => (
   <BaseButton
       label={label}
-      className="button-outline"
+      className={`button-outline ${className}`}
       fullWidth={fullWidth}
       onClick={onClick} />
 );

@@ -30,16 +30,25 @@
     --font-montserrat: Montserrat, sans-serif;
 
     --color-primary: #ECEEFF;
-    --color-coral-red: #FF6452;
+    --color-accent: #FF6452; /* coral-red */
+    --color-accent-light: rgba(255, 255, 255, 0.50);
     --color-slate-gray: #6D6D6D;
     --color-pale-blue: #F5F6FF;
-    --color-white-400: rgba(255, 255, 255, 1);
+    --color-white-400: rgba(255, 255, 255, 0.80);
 
     --shadow-3xl: 0 10px 40px rgba(0, 0, 0, 0.1);
+    --shadow-sm: 0 0 10px rgba(0, 0, 0, 0.1);
 
     --bg-hero: url('assets/images/collection-background.svg');
     --bg-card: url('assets/images/thumbnail-background.svg');
 
     --breakpoint-wide: 1440px; /* it's migrated from screens:wide breakpoint of tailwind.config.js  */
+    
 }
 
+[data-theme="dark"] {
+    --color-primary: #1A1A2E;                     /* Darker shade for primary background */
+    --color-slate-gray: #A0A0A0;                  /* Lighter shade for text on dark background */
+    --color-pale-blue: #2E2E4E;                   /* Darker shade for pale blue */
+    --color-white-400: rgba(255, 255, 255, 0.90); /* Slightly more opaque white */
+}

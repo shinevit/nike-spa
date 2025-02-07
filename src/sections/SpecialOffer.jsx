@@ -16,7 +16,7 @@ const SpecialOffer = () => {
       </div>
       <div className="flex flex-1 flex-col md:min-w-[450px] xl:max-w-[573px] xl:pt-35 text-justify">
         <h2 className="heading-text">
-          Special{' '}<span className="text-coral-red">offer</span>
+          Special{' '}<span className="text-accent">offer</span>
         </h2>
         <p className="mt-4 info-text">
           Embark on a shopping journey that redefines your experience with
@@ -30,7 +30,7 @@ const SpecialOffer = () => {
         </p>
         <div className="mt-11 flex flex-row gap-4">
           <PrimaryButton label="Shop now" iconURL={arrowRight} />
-          <OutlineButton label="Learn more" />
+          <OutlineButton label="Learn more" className="dark:bg-primary" />
         </div>
       </div>
     </div>

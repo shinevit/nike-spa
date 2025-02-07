@@ -8,7 +8,7 @@ const Subscribe = () => {
       items-center max-lg:flex-col gap-10">
         <div className="heading-text">
           <h3 className="leading-[68px] lg:max-w-md">Sign up for {' '}
-            <span className="text-coral-red">updates</span>{' '}& newsletter
+            <span className="text-accent">updates</span>{' '}& newsletter
           </h3>
         </div>
         <div className="flex lg:max-w-[40%] w-full items-center
