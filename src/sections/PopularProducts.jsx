@@ -15,7 +15,6 @@ const PopularProducts = () => {
       <div className="mt-16 grid lg:grid-cols-4 md:grid-cols-3
       sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-14 text-black dark:text-white-400">
         {products.map((product) => (
-          // TODO: make this card clickable to open a details page
           <PopularProductCard 
             key={product.name}
             {...product}

@@ -48,11 +48,32 @@
 }
 
 /* True utility classes */
+@utility product-card {
+  @apply flex flex-1 flex-col w-full max-sm:w-full cursor-pointer rounded-2xl shadow-sm px-5 py-5;
+
+  @variant dark {
+    @apply bg-pale-blue;
+  }
+
+  @variant hover {
+    @apply shadow-slate-gray/60 mt-[-1px];
+  }
+
+  @variant active {
+    @apply shadow-slate-gray/60 mt-[-1px];
+  }
+}
+
+@utility service-card {
+  @apply flex-1 sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-3xl shadow-slate-gray/40 px-10 py-16;
+
+  @variant dark {
+    @apply bg-pale-blue;
+  }
+}
+
 @utility icon-small {
   @apply rounded-full w-5 h-5;
-
-  @variant hover {   
-  }
 }
 
 @utility button-base {
