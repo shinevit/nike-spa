@@ -44,6 +44,13 @@
 
     --breakpoint-wide: 1440px; /* it's migrated from screens:wide breakpoint of tailwind.config.js  */
     
+    --animate-ripple-animation: ripple-animation 0.6s ease-out forwards;
+    @keyframes ripple-animation {
+        to {
+          transform: scale(4);
+          opacity: 0;
+        }
+    }
 }
 
 [data-theme="dark"] {

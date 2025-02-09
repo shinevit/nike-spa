@@ -1,3 +1,5 @@
+import { useRippleEffect } from '../hooks/useRippleEffect';
+
 const BaseButton = ({
   label,
   children,
@@ -5,15 +7,19 @@ const BaseButton = ({
   iconURL,
   onClick,
   fullWidth
-}) => (
-  <button className={`${className} ${fullWidth && 'w-full'}`} onClick={onClick}>
-    {children || label}
+}) => {
+  const onClickWithRipple = useRippleEffect(onClick);
+  
+  return (
+    <button className={`${className} ${fullWidth && 'w-full'}`} onClick={onClickWithRipple}>
+      {children || label}
 
-    {iconURL && 
-        <img src={iconURL} alt="icon" className="ml-2 icon-small" />
-    }
-  </button>
-);
+      {iconURL && 
+          <img src={iconURL} alt="icon" className="ml-2 icon-small" />
+      }
+    </button>
+  );
+}
 
 const PrimaryButton = ({ label, iconURL, fullWidth, onClick}) => (
   <BaseButton
