@@ -125,19 +125,19 @@
   @apply mr-3 cursor-pointer font-medium rounded-full text-gray-900 bg-gray-200 focus:outline-none dark:text-neutral-200 dark:bg-pale-blue relative overflow-hidden shadow;
 
   @variant hover {
-    @apply shadow-sm shadow-slate-gray/20 scale-102;
+    @apply shadow-sm shadow-slate-gray/30;
   }
   @variant active {
-    @apply shadow-sm shadow-slate-gray/20 scale-102;
+    @apply shadow-sm shadow-slate-gray/30;
   }
 
   @variant dark {
     @variant hover {
-      @apply shadow-accent/60;
+      @apply shadow-slate-gray/50;
     }
 
     @variant active {
-      @apply shadow-accent/60;
+      @apply shadow-slate-gray/50;
     }
   }
 }
