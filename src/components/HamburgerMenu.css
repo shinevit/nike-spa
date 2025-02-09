@@ -1,0 +1,72 @@
+:root {
+    --sidebar-width: 55%;
+    --transition-sec: 0.6s;
+}
+@media (max-width: 768px) {
+    :root {
+        --sidebar-width: 100%;
+    }
+}
+
+.svg-container svg {
+    position: absolute;
+    transition: opacity 0.4s ease;
+}
+
+.svg-container #hamburger-icon {
+    opacity: 1;
+}
+.svg-container #cross-icon {
+    opacity: 0;
+}
+
+/* Micro animation */
+#cross-icon path {
+    transition: transform var(--transition-sec) ease; /* Add a transition */
+    transform-origin: 50% 50%; /* Key: Set transform origin to center */
+}
+
+.hamburger:checked ~ .svg-container #hamburger-icon {
+    opacity: 0;
+}
+.hamburger:checked ~ .svg-container #cross-icon {
+    opacity: 1;
+}
+.hamburger:checked ~ .svg-container #cross-icon path {
+    transform: rotate(90deg) translate(0, 0); /* Removed unnecessary translate */
+}
+
+.sidebar {
+    width: var(--sidebar-width);
+    right: calc(-1 * var(--sidebar-width)); /* Hidden off-screen */
+    transition: transform var(--transition-sec) ease; /* Smooth transform for 0.6s transition */
+}
+.sidebar ul li::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 20px;
+}
+.sidebar ul li:last-child::after {
+    display: none;
+}
+
+.hamburger:checked ~ .sidebar {
+    transform: translateX(calc(-1 * var(--sidebar-width))); /* Slide the sidebar in */
+}
+
+.hamburger:checked ~ #overlay {
+    display: block; /* Show overlay when menu is open */
+}
+.hamburger:not(:checked) ~ #overlay {
+    display: none; /* Then hide */
+}
+
+body:has(.hamburger:checked) {
+    overflow-y: hidden; /* Hide a <body> scroll when the sidebar is open */
+}
+.hamburger:checked ~ .svg-container {
+    right: calc(var(--spacing) * 8); /* right-8 */
+}

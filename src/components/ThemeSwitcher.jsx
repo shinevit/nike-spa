@@ -11,7 +11,7 @@ const ThemeSwitcher = () => {
 
     useLayoutEffect(() => {
         const rootElement = document.documentElement;
-        // Apply theme to the <html> tag
+        // Apply the theme value to the <html> tag
         rootElement.setAttribute('data-theme', theme);
         
         // Store theme in local storage
@@ -26,7 +26,7 @@ const ThemeSwitcher = () => {
     return (
         <div>
             <button type="button" className="theme-switcher font-medium rounded-full
-             text-gray-800         bg-gray-200      focus:outline-none
+             text-gray-900         bg-gray-200      focus:outline-none
              dark:text-neutral-200 dark:bg-pale-blue" onClick={toogleTheme}>
                 <span className="flex shrink-0 justify-center items-center size-8">
                     <SvgImage src={theme==="light" ? sun : moon} />

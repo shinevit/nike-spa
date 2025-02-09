@@ -1,15 +1,15 @@
 import React from 'react';
 import { headerLogo } from '../assets/images';
-import { hamburger } from '../assets/icons';
 import { navLinks } from '../data';
 import ThemeSwitcher from './ThemeSwitcher';
+import HamburgerMenu from './HamburgerMenu';
 
 
 const Nav = () => {
   return (
     <header className="padding-x py-8 absolute z-10 w-full">
       <nav className="flex justify-between items-center max-container">
-        <a href="/">
+        <a href="/" className="focus:outline-none">
             <img
                 src={headerLogo}
                 alt="Logo"
@@ -40,11 +40,7 @@ const Nav = () => {
             <a href="/">Explore now</a>
         </div>
         <div className="hidden max-lg:block">
-          <img
-            src={hamburger}
-            alt="Hamburger"
-            width={25}
-            height={25} />
+            <HamburgerMenu />
         </div>
       </nav>
     </header>

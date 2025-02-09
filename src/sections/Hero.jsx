@@ -16,7 +16,7 @@ const Hero = () => {
           <p className="text-xl font-montserrat text-accent">Our Summer collections</p>
           
           <h1 className="mt-10 heading-text text-8xl max-sm:text-[72px] max-sm:leading-[82px]">
-            <span className="xl:bg-white dark:xl:bg-primary xl:whitespace-nowrap relative z-10 pr-10">The new arrival</span>
+            <span className="xl:bg-white dark:xl:bg-primary xl:whitespace-nowrap relative z-5 pr-10">The new arrival</span>
             <br/>
             <span className="text-accent inline-block mt-3">Nike</span> shoes
           </h1>
@@ -44,7 +44,7 @@ const Hero = () => {
             alt="show collection"
             width={610}
             height={500}
-            className="object-contain relative z-10" />
+            className="object-contain relative z-5" />
 
           <div className="flex sm:gap-6 gap-4 absolute 
           -bottom-[5%] sm:left-[10%] max-sm:px-6">
