@@ -68,11 +68,11 @@
   }
 
   @variant hover {
-    @apply shadow-slate-gray/60 mt-[-1px];
+    @apply shadow-slate-gray/60 mt-[-1px] transition-all duration-500;
   }
 
   @variant active {
-    @apply shadow-slate-gray/60 mt-[-1px];
+    @apply shadow-slate-gray/60 mt-[-1px] transition-all duration-500;
   }
 }
 
