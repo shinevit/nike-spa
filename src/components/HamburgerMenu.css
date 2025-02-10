@@ -63,10 +63,3 @@
 .hamburger:not(:checked) ~ #overlay {
     display: none; /* Then hide */
 }
-
-body:has(.hamburger:checked) {
-    overflow-y: hidden; /* Hide a <body> scroll when the sidebar is open */
-}
-.hamburger:checked ~ .svg-container {
-    right: calc(var(--spacing) * 8); /* right-8 */
-}

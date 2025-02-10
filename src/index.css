@@ -10,15 +10,19 @@
 
 @layer base {
   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+    @apply m-0 p-0 box-border scroll-smooth;
+  }
+
+  body {
+    overflow: hidden;
   }
 }
 
 @layer components {
-
+  #root {
+    @apply relative overflow-y-auto h-screen;
+  }
+  
   .max-container {
     max-width: var(--breakpoint-wide);
     margin: 0 auto;
@@ -115,7 +119,8 @@
     @apply border-pale-blue shadow-3xl shadow-slate-gray/30 text-white-400;
   }
 }
-[data-theme="light"] { /* customize the background ripple effect for an outline button */
+[data-theme="light"] { 
+  /* customize a background color of ripple effect for the outline button */
   .button-outline .ripple {
     @apply bg-slate-gray/20;
   }
