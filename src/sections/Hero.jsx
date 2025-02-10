@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { PrimaryButton, ShoeCard } from "../components";
 import { arrowRight } from "../assets/icons";
 import { shoes, statistics } from "../data";
-import { bigShoe1 } from "../assets/images"
+import { bigShoe1 } from "../assets/images";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const [bigShoeImage, setBigShoeImage] = useState(bigShoe1);
@@ -39,13 +40,17 @@ const Hero = () => {
         </div>
 
         <div className="relative flex flex-1 justify-center items-center xl:min-h-screen max-xl:py-40 bg-hero">
-          <img
+          <motion.img
             src={bigShoeImage}
             alt="show collection"
             width={610}
             height={500}
-            className="object-contain relative z-5" />
-
+            initial={{ y: 100 }} 
+            whileInView={{ y: 0 }}
+            transition={{ duration: 1.2 }}
+            className="object-contain relative z-5"
+          />
+          
           <div className="flex sm:gap-6 gap-4 absolute 
           -bottom-[5%] sm:left-[10%] max-sm:px-6">
               {shoes && shoes.map((shoe, idx)=>(

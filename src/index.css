@@ -16,6 +16,17 @@
   body {
     overflow: hidden;
   }
+
+  img {
+    pointer-events: none;
+  }
+
+  button, img {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+  }
 }
 
 @layer components {
@@ -55,7 +66,7 @@
     border-radius: 50%;
     transform: scale(0);
     background: rgba(255, 255, 255, 0.5);
-    animation: var(--animate-ripple-animation);
+    animation: var(--animate-ripple);
   }
 }
 
@@ -68,11 +79,11 @@
   }
 
   @variant hover {
-    @apply shadow-slate-gray/60 mt-[-1px] transition-all duration-500;
+    @apply shadow-slate-gray/60 transition-all -translate-y-[1px] duration-500 ease-in;
   }
 
   @variant active {
-    @apply shadow-slate-gray/60 mt-[-1px] transition-all duration-500;
+    @apply shadow-slate-gray/60 transition-all -translate-y-[1px] duration-500 ease-in;
   }
 }
 
@@ -88,8 +99,12 @@
   @apply rounded-full w-5 h-5;
 }
 
+@utility animate-enlarge {
+  @apply transition delay-150 duration-300 ease-in hover:-translate-y-[1px] hover:scale-102;
+}
+
 @utility button-base {
-  @apply flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none rounded-full cursor-pointer   relative overflow-hidden shadow;
+  @apply flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none rounded-full cursor-pointer   relative overflow-hidden shadow   animate-enlarge;
 }
 
 @utility button-primary {

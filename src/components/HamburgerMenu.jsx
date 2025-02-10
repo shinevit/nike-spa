@@ -45,7 +45,7 @@ const HamburgerMenu = () => {
     return (
         <div>
             <input ref={hamburgerInputRef} type="checkbox" id="hamburger" className="hamburger hidden appearance-none p-0 m-0 outline-none pointer-events-none" />
-            <label htmlFor="hamburger" className="svg-container fixed top-7 right-9 z-50 cursor-pointer rounded-full size-8 dark:text-neutral-200">
+            <label htmlFor="hamburger" className="svg-container fixed top-7 max-sm:top-5 right-9 max-sm:right-3 z-50 cursor-pointer rounded-full size-8 dark:text-neutral-200">
                 <SvgImage src={hamburger} />
                 <SvgImage src={cross} />
             </label>

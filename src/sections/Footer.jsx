@@ -1,13 +1,28 @@
 import { copyrightSign } from '../assets/icons';
 import { footerLogo } from '../assets/images'
 import { footerLinks, socialMedia } from '../data';
+import { motion } from "framer-motion";
+
+const animateFadeInLeft = {
+  hidden: { opacity: 0, x: 20 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: 'easeInOut' } }
+};
+
+const animateFadeInRight = {
+  hidden: { opacity: 0, x: -20 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: 'easeInOut' } }
+};
 
 const Footer = () => {
   return (
-    <footer className="max-container">
+    <div className="max-container">
       <div className="flex justify-between items-start gap-20 
       flex-wrap max-lg:flex-col">
-        <div className="flex flex-col items-start">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={animateFadeInRight}
+          className="flex flex-col items-start">
           <a href="/">
             <img
               src={footerLogo}
@@ -35,10 +50,13 @@ const Footer = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
         
-        <div className="flex flex-1 justify-between lg:gap-10
-        gap-20 flex-wrap">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={animateFadeInLeft}
+          className="flex flex-1 justify-between max-sm:gap-10 lg:gap-10 gap-20 flex-wrap">
           {footerLinks.map((section) => (
             <div key={section.title}>
               <h4 className="text-white font-montserrat
@@ -49,20 +67,24 @@ const Footer = () => {
                     key={link.name}
                     className="mt-3 text-white-400 
                     font-montserrat text-base leading-tight
-                    hover:text-slate-gray cursor-pointer">
-                    <a>{link.name}</a>
+                    hover:text-slate-gray active:text-slate-gray cursor-pointer">
+                    <a href={link.link}>{link.name}</a>
                   </li>
                 ))}
               </ul>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
 
       <div className="flex justify-between text-white-400
-      mt-24 max-sm:flex-col max-sm:items-center max-sm:mb-[10px] sm:mb-[20px]">
-          <div className="flex flex-1 justify-start items-center
-          gap-2 font-montserrat cursor-pointer">
+      mt-24 max-sm:flex-col max-sm:items-center max-sm:mb-[10px] sm:mb-[20px] max-sm:pb-20">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            variants={animateFadeInRight}
+            className="flex flex-1 justify-start items-center gap-2 
+            font-montserrat cursor-pointer">
             <img
               src={copyrightSign}
               alt="copyright sign"
@@ -70,12 +92,16 @@ const Footer = () => {
               height={20}
             />
             <p>Copyright. All rights reserved.</p>
-          </div>
-          <p className="font-montserrat cursor-pointer">
+          </motion.div>
+          <motion.p 
+            initial="hidden"
+            whileInView="visible"
+            variants={animateFadeInLeft}
+            className="font-montserrat cursor-pointer">
             Terms & Conditions
-          </p>
+          </motion.p>
       </div>
-    </footer>
+    </div>
   );
 };
 
