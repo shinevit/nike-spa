@@ -22,7 +22,7 @@ const Subscribe = () => {
             className="input max-sm:py-3 w-full"
           />
           <div className="flex max-sm:justify-end max-sm:w-full items-center">
-            <PrimaryButton label="Sign Up" fullWidth />
+            <PrimaryButton label="Subscribe" fullWidth />
           </div>
         </div>
     </div>
