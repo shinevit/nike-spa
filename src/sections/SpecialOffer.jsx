@@ -30,7 +30,7 @@ const SpecialOffer = () => {
         </p>
         <div className="mt-11 flex flex-row gap-4">
           <PrimaryButton label="Shop now" iconURL={arrowRight} />
-          <OutlineButton label="Learn more" className="dark:bg-primary" />
+          <OutlineButton label="Learn more" />
         </div>
       </div>
     </div>

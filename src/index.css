@@ -106,7 +106,6 @@
 @utility button-base {
   @apply flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none rounded-full cursor-pointer   relative overflow-hidden shadow   animate-enlarge;
 }
-
 @utility button-primary {
   @apply button-base bg-accent border-3 border-accent-light text-white;
 
@@ -123,15 +122,15 @@
   @apply button-base bg-white text-slate-gray border-3 border-slate-gray/20 px-10;
 
   @variant hover {
-    @apply shadow-3xl shadow-slate-gray/40;
+    @apply shadow-3xl shadow-slate-gray/40 dark:bg-pale-blue/10;
   }
 
   @variant active {
-    @apply shadow-3xl shadow-slate-gray/40;
+    @apply shadow-3xl shadow-slate-gray/40 dark:bg-pale-blue/10;
   }
 
   @variant dark {
-    @apply border-pale-blue shadow-3xl shadow-slate-gray/30 text-white-400;
+    @apply border-pale-blue shadow-3xl shadow-slate-gray/30 text-white-400 bg-primary hover:bg-slate-gray/5;
   }
 }
 [data-theme="light"] { 
