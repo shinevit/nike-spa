@@ -1,6 +1,6 @@
 {
   "name": "nike",
-  "description": "This is a Nike web site for learning Tailwind CSS with Vite & React",
+  "description": "This is a Nike web app for learning Tailwind CSS 4 with Vite & React",
   "private": true,
   "version": "1.0.0",
   "type": "module",

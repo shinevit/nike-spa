@@ -1,35 +1,79 @@
-# React 19 + Tailwind CSS 4 + Vite
+# React + Tailwind CSS 4 + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Nike-themed SPA built with React 19 & Vite, tailored for practicing Tailwind CSS 4.
 
-Currently, two official plugins are available:
+## <a name="tech-stack">⚙️ Tech Stack:</a>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Tailwind CSS 4
+- React.js 19
+- Framer Motion
 
+## <a name="features">🔋 Features</a>
+👉 **Mobile Responsive**: the entire web app is responsive across various devices
 
-## Start the app
+👉 **Theming**: supported day and night themes
 
-> `npm start`
+👉 **Code Architecture & Reusability**: component-oriented architecture
 
-## Build the app
+👉 **Microanimations & Animated Sections**: react to user input for smoother interaction; section animations use `Framer Motion`
+
+👉 **Complex Hero Section**: a visually appealing hero section showcasing key elements
+
+👉 **Popular Products Showcase**: a section highlighting popular Nike products
+
+👉 **Services & Quality**: a section of services focused on delivering high-quality Nike products
+
+👉 **Special Offers**: showcase special offers in an eye-catching manner
+
+👉 **Testimonials**: a testimonials section for a captivating user experience
+
+👉 **Newsletter Integration**: a newsletter section with Tailwind styling, encouraging user engagement
+
+👉 **Footer**: a comprehensive footer section containing various links
+
+## <a name="quick-start">🤸 Quick Start</a>
+
+**Prerequisites:**
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/)
+
+**Installation**
+
+Install the project dependencies:
+
+```bash
+npm install
+```
+
+**Running the Project**
+
+```bash
+npm start
+```
+
+**Open** [http://localhost:5173](http://localhost:5173) in your browser to view the app.
+
+## <a name="building">⚙️ Building</a>
 
 > `npm run build`
 
-_Find the `dist` folder after the build.    
-To get the buld version of the app worked place a content of `dist` folder on a local web server or deploy to a remote host_
+_After build, serve the `dist` folder via a local web server or deploy it remotely._
 
-## Deploy the app under a docker locally
+
+## <a name="deployement">⚙️ Deployement</a>
+Deploy the app under Docker locally
 
 > `npm run deploy`
 
-_It publishes `dist` folder to a local docker container. Nginx server is created with persistent `nginx` volume_
+_Publishes the `dist` folder to a Docker container with an `Nginx` server._
 
-## Open the App with tone of these link on a web browser:
 
-`http://localhost:5173`   
-`http://[internal IP]:5173`
-
-### Destroy a local server deployment
+Destroy a local deployment
 
 > `npm run destroy`
+
+## <a name="acknowledgment">🚀 Acknowledgment</a>
+
+Thanks [@Adrian and JS Mastery Team](https://github.com/adrianhajdin) for the awesome learning materails!
