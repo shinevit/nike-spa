@@ -2,6 +2,10 @@
 
 This is a Nike-themed SPA built with React 19 & Vite, tailored for practicing Tailwind CSS 4.
 
+## <a name="acknowledgment">🚀 Acknowledgment</a>
+
+Thanks [@Adrian and JS Mastery Team](https://github.com/adrianhajdin) for the awesome learning materails!
+
 ## <a name="tech-stack">⚙️ Tech Stack:</a>
 
 - Tailwind CSS 4
@@ -74,6 +78,39 @@ Destroy a local deployment
 
 > `npm run destroy`
 
-## <a name="acknowledgment">🚀 Acknowledgment</a>
 
-Thanks [@Adrian and JS Mastery Team](https://github.com/adrianhajdin) for the awesome learning materails!
+## <a name="screenshots">📸 Screenshots</a>
+
+<details>
+<summary><code>Desktop - White Theme</code></summary>
+<img src="images/nike-spa-white-theme-desktop-screenshot.png" alt="desktop screenshot white theme" />
+</details>
+
+<details>
+<summary><code>Desktop - Night Theme</code></summary>
+<img src="images/nike-spa-night-theme-desktop-screenshot.png" alt="desktop screenshot night theme" />
+</details>
+
+
+## <a name="animations">🎥 Animated Captures</a>
+
+<details>
+<summary><code>Desktop - White Theme</code></summary>
+<img src="images/nike-spa-white-theme-desktop-capture.gif" alt="desktop animated white theme" />
+</details>
+
+<details>
+<summary><code>Mobile Screens</code></summary>
+<table style="border: none;">
+    <tr style="border: none;">
+        <td style="padding-right: 25px; border: none; vertical-align: top;">
+            <summary><code>White Theme</code></summary>
+            <img src="images/nike-spa-white-theme-mobile-capture.gif" alt="mobile animated white theme" />
+        </td>
+        <td style="border: none; vertical-align: top;">
+            <summary><code>Night Theme</code></summary>
+            <img src="images/nike-spa-night-theme-mobile-capture.gif" alt="mobile animated night theme" />
+        </td>
+    </tr>
+</table>
+</details>
